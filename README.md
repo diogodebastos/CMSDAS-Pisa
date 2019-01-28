@@ -10,7 +10,8 @@ https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolPisa2019Pre
 Ex: https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolPisa2019JetsExercise
 Talk: https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolPisa2019JetsExercise/2019_01_25_DAS_Jets.pdf
 ## Muons
-
+Ex: https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolPisa2019MuonsExercise 
+Talk: https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolPisa2019MuonsExercise/Muons_CMSDAS_Pisa_v1.pdf
 ## Rootstats
 
 ## Electrons
