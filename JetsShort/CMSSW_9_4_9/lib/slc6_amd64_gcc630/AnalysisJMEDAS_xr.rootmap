@@ -1,0 +1,13 @@
+{ decls }
+namespace std {  }
+namespace edm {  }
+namespace edm { template <typename T> class Wrapper; }
+
+[ libAnalysisJMEDAS.so ]
+# List of selected classes
+class edm::Wrapper<std::vector<std::vector<std::pair<std::string,float> > > >
+class edm::Wrapper<vector<vector<pair<basic_string<char,char_traits<char>,allocator<char> >,float> > > >
+class edm::Wrapper<vector<vector<pair<string,float> > > >
+class vector<std::vector<std::pair<std::string,float> > >
+class vector<vector<pair<basic_string<char,char_traits<char>,allocator<char> >,float> > >
+class vector<vector<pair<string,float> > >
