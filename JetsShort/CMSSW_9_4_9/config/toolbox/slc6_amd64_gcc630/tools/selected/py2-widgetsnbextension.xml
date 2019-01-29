@@ -1,3 +1,0 @@
-<tool name="py2-widgetsnbextension" version="1.2.6-fmblme">
-  <use name="py2-pippkgs"/>
-</tool>

@@ -1,3 +1,0 @@
-<tool name="py2-singledispatch" version="3.4.0.3-fmblme">
-  <use name="py2-pippkgs"/>
-</tool>

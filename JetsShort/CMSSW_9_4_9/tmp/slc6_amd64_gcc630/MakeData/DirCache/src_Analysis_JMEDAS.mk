@@ -1,2 +1,0 @@
-ALL_PACKAGES += Analysis/JMEDAS
-subdirs_src_Analysis_JMEDAS := src_Analysis_JMEDAS_plugins src_Analysis_JMEDAS_python src_Analysis_JMEDAS_test src_Analysis_JMEDAS_src
