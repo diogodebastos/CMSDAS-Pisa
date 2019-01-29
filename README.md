@@ -16,7 +16,10 @@ Ex: https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolPisa201
 
 Talk: https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolPisa2019MuonsExercise/Muons_CMSDAS_Pisa_v1.pdf
 ## Rootstats
+Ex: https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolPisa2019StatisticsExercise 
 
+Talk theory: https://indico.cern.ch/event/758324/contributions/3292197/attachments/1784228/2908120/CMS_DAS_Pisa.pdf
+Talk Ex: https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolPisa2019StatisticsExercise/CMSDAS_Stat_2019.pdf 
 ## Electrons
 
 ## ML
