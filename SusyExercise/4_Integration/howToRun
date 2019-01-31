@@ -1,0 +1,15 @@
+# Copy and paste each line
+
+root -l
+.L Analyzer.C
+vector<string> inputFiles={
+"WZTo3LNu",
+"TChiWZ_500_50",
+"TChiWZ_500_200",
+"TChiWZ_375_285",
+"TChiWZ_200_50",
+"TChiWZ_200_160",
+"TChiWZ_200_140",
+"TChiWZ_200_110"}
+
+Analyzer(inputFiles,36)
