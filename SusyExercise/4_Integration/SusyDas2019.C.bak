@@ -128,23 +128,22 @@ void SusyDas2019::Loop()
    hrepo.insert(std::make_pair("transverse_mass",new TH1F("transverse_mass","Transverse Mass", 300,0,300)));
    
    
-   // Mll vs MET
-   // MET
-   Float_t XBin = 7;
-   Float_t minX = 50;
-   Float_t maxX = 400;
+   // METvsMLL
+   // MLL
+   Float_t XBin = 6;
+   Float_t minX = 0;
+   Float_t maxX = 120;
    Float_t stepX = (maxX-minX)/XBin;
-   //Mll
-   Float_t YBin = 6;
-   Float_t minY = 0;
-   Float_t maxY = 120;
+   //MET
+   Float_t YBin = 7;
+   Float_t minY = 50;
+   Float_t maxY = 400;
    Float_t stepY = (maxY-minY)/YBin;
 
    Int_t finalBin = XBin*YBin;
-   hrepo.insert(std::make_pair("mllVSmet",new TH1F("mllVSmet","Mll vs MET", finalBin,0,finalBin)));
-   hrepo.insert(std::make_pair("metVSmll",new TH1F("metVSmll","MET vs Mll", finalBin,0,finalBin)));
-   //Long64_t nentries = fChain->GetEntriesFast();
-   Long64_t nentries = 100000;
+   hrepo.insert(std::make_pair("metVSmll",new TH1F("metVSmll","MET vs MLL", finalBin,0,finalBin)));
+   Long64_t nentries = fChain->GetEntriesFast();
+  // Long64_t nentries = 10000;
    
    Long64_t nbytes = 0, nb = 0;
    TStopwatch glb_clock;
@@ -211,7 +210,7 @@ void SusyDas2019::Loop()
       vector<Int_t> passMVA;
       for (int i=0; i<nLepGood; i++) {
        LepGood_newMVA[i] = EvaluateLeptonMVA(i,LepGood_pdgId[i],LepGood_eta[i]);
-       if (LepGood_newMVA[i] > -0.15) {
+       if (LepGood_newMVA[i] > -0.15 && LepGood_pt[i] > 25) {
         passMVA.push_back(i);
        }
       }
@@ -264,13 +263,12 @@ void SusyDas2019::Loop()
        hrepo["transverse_mass"]->Fill(transverse_mass);
 
        // Unroll PLOT METvsMLL
-       int finalY = mass/stepY;
-       int finalX = met_pt/stepX;
+       int finalX = mass/stepX;
+       int finalY = met_pt/stepY;
        
-       hrepo["mllVSmet"]->Fill(finalY*XBin+finalX);
-       hrepo["metVSmll"]->Fill(finalX*YBin+finalY);
+       hrepo["metVSmll"]->Fill(finalY*XBin+finalX);
       }
-   }
+     }
 
    // PRODUCE YOUR OUTPUT HERE (PLOTTING, SAVING HISTOGRAMS ETC.)
 //   hrepo["numberOfLeptons"]->Print();

@@ -13,3 +13,4 @@ vector<string> inputFiles={
 "TChiWZ_200_110"}
 
 Analyzer(inputFiles,36)
+
